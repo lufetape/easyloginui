@@ -29,7 +29,7 @@ export class LoginService {
     /**
      * Login endpoint URL.
      */
-    private loginUrl = ENDPOINTS.LOGIN_DEV;
+    private loginUrl = ENDPOINTS.LOGIN;
 
     /**
      * Creates an instance of the LoginService with the injected
@@ -49,8 +49,7 @@ export class LoginService {
     login(user: any) {
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-        //return this.http.post(this.loginUrl, user, options)
-		return this.http.get(this.loginUrl, options)
+		return this.http.post(this.loginUrl, user, options)
             .map(res => res.json())
             .map((res) => {
 				return res;

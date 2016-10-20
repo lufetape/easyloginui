@@ -15,8 +15,8 @@
  */
 export class User {
     constructor(
-        public firstName: string,
-        public lastName: string,
+        public firstname: string,
+        public lastname: string,
         public username: string
     ) { }
 }

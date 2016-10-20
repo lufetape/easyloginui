@@ -40,7 +40,7 @@ export function init(port: number) {
             serverRequest = request.del({ uri: url, json: req.body });
         } else {
             serverRequest = request(url);
-        }
+        }        
         req.pipe(serverRequest).pipe(res);
     });
 

@@ -9,6 +9,5 @@
  */
 
 export const ENDPOINTS = {
-    'LOGIN': '/api/login',
-    'LOGIN_DEV': 'http://mockbin.org/bin/b18dcbf7-05f0-4e32-83bd-2ae305db6fa4'
+    'LOGIN': '/api/login'
 };
