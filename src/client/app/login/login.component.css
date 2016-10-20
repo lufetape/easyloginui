@@ -1,0 +1,199 @@
+/*
+ * This source code is the confidential, proprietary information of
+ * Cafeto Software S.A.S. here in, you may not disclose such Information,
+ * and may only use it in accordance with the terms of the license
+ * agreement you entered into with Cafeto Software S.A.S.
+ *
+ * 2016: Cafeto Software S.A.S.
+ * All Rights Reserved.
+ */
+
+.login-page,
+.welcome-page {
+    background: resolve('background.png') #d2d6de no-repeat left top;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.77) 100%), resolve('background.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.btn-login {
+    background-color: #b3b3b3;
+    border-color: #b3b3b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active {
+    background-color: #a6a6a6;
+    border-color: #9a9a9a;
+}
+
+.btn-login.disabled:hover,
+.btn-login.disabled:focus,
+.btn-login.disabled:active,
+.btn-login.disabled.active,
+.btn-login[disabled]:hover,
+.btn-login[disabled]:focus,
+.btn-login[disabled]:active,
+.btn-login[disabled].active,
+fieldset[disabled] .btn-login:hover,
+fieldset[disabled] .btn-login:focus,
+fieldset[disabled] .btn-login:active,
+fieldset[disabled] .btn-login.active {
+    background-color: #b3b3b3;
+    border-color: #b3b3b3;
+}
+
+@media (min-width: 1200px) {
+    .copyright {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .copyright {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .copyright {
+        font-size: 80%;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 767px) {
+    .copyright {
+        font-size: 75%;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 480px) {
+    .copyright {
+        font-size: 75%;
+        font-weight: 400;
+    }
+}
+
+#login-other-actions {
+    padding: 10px 0px 10px 0px;
+}
+
+.loading-btn {
+    position: relative;
+    opacity: .8;
+    color: transparent !important;
+    text-shadow: none !important;
+    pointer-events: none;
+}
+
+@-webkit-keyframes ld {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@-moz-keyframes ld {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@-o-keyframes ld {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes ld {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.loading-btn:hover,
+.loading-btn:active,
+.loading-btn:focus {
+    cursor: default;
+    color: transparent;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.loading-btn:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: transparent;
+    border: 1px solid #fff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+    width: 24px;
+    height: 24px;
+    -webkit-animation: ld 1s ease-in-out infinite;
+    -moz-animation:    ld 1s ease-in-out infinite;
+    -o-animation:      ld 1s ease-in-out infinite;
+    animation:         ld 1s ease-in-out infinite;
+}
+
+.login-logo,
+.welcome-logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.login-logo a,
+.welcome-logo a {
+    color: #444;
+}
+
+.login-box,
+.welcome-box {
+    width: 360px;
+    margin: 0 auto;
+    padding-top: 7%;
+}
+
+@media (max-width: 768px) {
+    .login-box,
+    .welcome-box {
+        width: 90%;
+    }
+}
+
+.login-box-body,
+.welcome-box-body {
+    padding: 20px;
+    border-top: 0;
+    color: #5d5d5d;
+}
+
+.login-box-body .form-control-feedback,
+.welcome-box-body .form-control-feedback {
+    color: #777;
+}
+
+.login-box-msg,
+.welcome-box-msg {
+    margin: 0;
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.img-centered {
+    margin: 0 auto;
+}

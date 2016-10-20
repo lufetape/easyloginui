@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "API": "siklus.cafetosoftware.local"
+    },
+    "prod": {
+        "API": "https://siklushr.co"
+    },
+    "staging": {
+        "API": "https://siklushr.co"
+    }
+}

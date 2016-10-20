@@ -1,0 +1,13 @@
+{
+    "name": "easylogin",
+    "version": "1.0.0",
+    "dependencies": {
+        "body-parser": "latest",
+        "compression": "latest",
+        "express": "latest",
+        "morgan": "^1.7.0",
+        "multer": "latest",
+        "request": "latest",
+        "nconf": "latest"
+    }
+}

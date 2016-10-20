@@ -1,0 +1,24 @@
+<div class="welcome-page">
+	<div class="welcome-box">
+		<h2 id="welcomeTitle" class="login-box-msg subtitle">
+            <b>{{'WELCOME_TITLE_LABEL' | translate}} {{user.firstName}}</b>            
+        </h2>
+        <div id="username" class="login-box-msg">
+            <i class="fa fa-lock"></i>
+            {{user.username}}
+        </div>
+        <div id="welcomeMsg" class="alert alert-info" role="alert">
+            <span class="fa fa-check-circle" aria-hidden="true"></span>
+            {{'WELCOME_TEXT_LABEL' | translate}}
+            <a href="javascript:void(0)" class="alert-link" (click)="logout()">
+                {{'LOGIN_LOGOUT_BUTTON' | translate}}
+            </a>
+        </div>
+		<div class="login-logo">
+			<img src="../assets/img/fabrica-de-software.png" class="img-responsive img-centered">
+		</div>
+        <div class="login-box-body text-center">
+            <p class="copyright">{{'LOGIN_COPYRIGHT_LABEL' | translate}}</p>
+        </div>
+	</div>	
+</div>

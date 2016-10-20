@@ -1,0 +1,49 @@
+<div class="login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <img src="../assets/img/logo-cafeto.png" class="img-responsive img-centered">
+        </div>
+        <h2 class="login-box-msg subtitle"><b>{{'LOGIN_WELCOME_LABEL' | translate}}</b></h2>
+        <p class="login-box-msg">{{'LOGIN_ACCESS_LABEL' | translate}}</p>
+        <div id="errorMsg" class="alert alert-danger" 
+             role="alert" *ngIf="showErrorMessage">
+            <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            {{authErrorMessage}}
+        </div>
+        <div class="login-box-body text-center">
+            <form (ngSubmit)="auth()" #loginForm="ngForm">
+                <div class="form-group has-feedback">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon1">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input id="username" type="text" class="form-control" 
+                            placeholder="{{'LOGIN_USERNAME_PLACEHOLDER' | translate}}" 
+                            [(ngModel)]="user.username" name="username" required>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="sizing-addon1">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                        <input id="password" type="password" placeholder="{{'LOGIN_PASSWORD_PLACEHOLDER' | translate}}" 
+                            [(ngModel)]="user.password" name="password" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button id="login" name="login" type="submit" [disabled]="!loginForm.valid" 
+                                [class.loading-btn]="requestActive"
+                                class="btn btn-login btn-block btn-flat">
+                            {{'LOGIN_LOGIN_BUTTON' | translate}}
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <br/>
+            <p class="copyright">{{'LOGIN_COPYRIGHT_LABEL' | translate}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+    "LOGIN_WELCOME_LABEL": "EasyLogin!",
+    "LOGIN_ACCESS_LABEL": "Accede a EasyLogin ingresando tu nombre de usuario y contraseña",
+    "LOGIN_USERNAME_PLACEHOLDER": "Nombre de Usuario",
+    "LOGIN_PASSWORD_PLACEHOLDER": "Contraseña",
+    "LOGIN_LOGIN_BUTTON": "Acceder",
+    "LOGIN_LOGOUT_BUTTON": "Salir",
+    "LOGIN_COPYRIGHT_LABEL": "EasyLogin, desarrollado por Cafeto Software Colombia © 2016",
+    "WELCOME_TITLE_LABEL": "Hola",
+    "WELCOME_TEXT_LABEL": "Has accedido correctamente a EasyLogin.",    
+    "LABEL_AUTH_ERROR_MESSAGE": "Error autenticando usuario. Intente nuevamente por favor"
+}
