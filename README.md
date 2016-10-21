@@ -3,6 +3,7 @@
 Build & Run this application as follow:
 
 ```
+npm install
 npm build build.prod
 cd dist/prod
 npm install
