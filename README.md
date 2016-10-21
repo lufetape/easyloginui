@@ -11,6 +11,7 @@ You should install and run [easyloginjava](https://github.com/alejovicu/easyjava
 Build & Run this application as follow:
 
 ```
+npm install
 npm run build.prod
 cd dist/prod
 npm install
