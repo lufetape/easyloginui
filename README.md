@@ -4,7 +4,7 @@ A simple Angular 2 client application to serve as tutorial
 
 ## Requirements
 
-You should install and run first [easyloginjava](https://github.com/alejovicu/easyjavalogin)
+You should install and run [easyloginjava](https://github.com/alejovicu/easyjavalogin) first
 
 ## Instalation
 
