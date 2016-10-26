@@ -29,6 +29,6 @@ RUN cd $PWD/app \
 
 RUN chown -R siklus /home/siklus
 
-RUN echo 'This image contains: Node 5.2 - Siklus Organization Structure UI'
+RUN echo 'This image contains: Node 5.2 - Easy Login UI'
 USER siklus
 CMD ["node", "/home/siklus/app/app.server.prod.js"]
