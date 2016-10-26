@@ -1,12 +1,14 @@
 ## EasyLogin UI
 
-A simple Angular 2 client application to serve as tutorial
+A simple Angular 2 client application to serve as tutorial. This application was not implemented for production environments. The only idea is to show the acceptance tests made in LINK_HERE.
 
 ## Requirements
 
 You should install and run [easyloginjava](https://github.com/alejovicu/easyjavalogin) first
 
-## Instalation
+
+
+## Installation
 
 Build & Run this application as follow:
 
