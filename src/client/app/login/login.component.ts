@@ -52,9 +52,7 @@ export class LoginComponent {
     /**
      * User object for login.
      */
-    user: any = {
-        organization: {}
-    };
+    user: any = {};
 
     /**
      * Creates an instance of the LoginComponent with the injected
@@ -76,7 +74,7 @@ export class LoginComponent {
         this.requestActive = true;
         this.loginService.login(this.user).subscribe(
             result => {
-                if (result && result.status.code === 0) {
+                if (result && result.status.code === '0') {
                     localStorage.setItem('user', JSON.stringify(result.user));
                     Cookie.set('user', JSON.stringify(result.user), 0.01, '/', '.' + window.document.domain);
                     this.redirect('/welcome');
